@@ -1,0 +1,17 @@
+{% from "atoms/year.html" import year %}
+{% from "organisms/era-card.html" import eraCard %}
+
+{% macro timeline(eras) %}
+<ol class="timeline">
+    {% for era in eras %}
+    <li class="timeline__item">
+        <div class="timeline__era">
+            {{ eraCard(era) }}
+        </div>
+        <div class="timeline__line">
+            {{ year(era.start_year) }}
+        </div>
+    </li>
+    {% endfor %}
+</ol>
+{% endmacro %}
