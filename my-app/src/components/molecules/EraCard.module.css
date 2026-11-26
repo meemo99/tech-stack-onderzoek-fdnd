@@ -1,0 +1,43 @@
+ .card h2 {
+     font-size: var(--heading-h2);
+     color: var(--color-text);
+     font-family: larken;
+ }
+
+ .content {
+     line-height: 1.4;
+     font-size: var(--body-body);
+     color: var(--color-text);
+     margin: 1lh;
+     font-family: inter;
+ }
+
+ .card {
+     margin: var(--spacing-s);
+     max-width: 75ch;
+ }
+
+ .quote {
+     margin: var(--spacing-m);
+     font-size: var(--heading-quote);
+     color: var(--color-text);
+     font-family: larken;
+     font-style: italic;
+ }
+
+ .card img {
+     object-fit: cover;
+     max-inline-size: 100%;
+     block-size: auto;
+     padding: var(--spacing-m);
+     width: 100%;
+ }
+
+ @media (prefers-color-scheme: light) {
+
+     .card h2,
+     .content,
+     .quote {
+         color: var(--color-primary);
+     }
+ }

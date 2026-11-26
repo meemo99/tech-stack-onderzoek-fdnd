@@ -1,3 +1,4 @@
+import styles from "./EraCard.module.css"
 export default function EraCard({ era }) {
     return (
         <article className={styles.card}>
