@@ -1,0 +1,32 @@
+ .eraList {
+     margin: var(--spacing-l);
+     list-style: none;
+ }
+
+ .timeList {
+     display: grid;
+     grid-template-columns: 1fr 5rem 1fr;
+     grid-column: 1 /-1;
+     list-style: none;
+     color: var(--color-text);
+ }
+
+ .timeline {
+     grid-column: 2;
+     background-color: var(--color-text);
+ }
+
+ .era {
+     grid-column: 1;
+     width: 100%;
+ }
+
+ @media (prefers-color-scheme: light) {
+     .timeline {
+         background-color: var(--color-primary);
+     }
+
+     .timeList {
+         color: var(--color-primary);
+     }
+ }
