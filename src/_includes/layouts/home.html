@@ -1,0 +1,6 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+{% from "organisms/timeline.html" import timeline %}
+{{ timeline(eras) }}
+{% endblock %}
