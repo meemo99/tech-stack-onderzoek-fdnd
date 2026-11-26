@@ -1,0 +1,93 @@
+h3 {
+    font-size: var(--heading-year);
+    background-color: transparent;
+    font-family: larken;
+}
+
+h2 {
+    font-size: var(--heading-h2);
+    color: var(--color-text);
+    font-family: larken;
+}
+
+p {
+    line-height: 1.4;
+    font-size: var(--body-body);
+    color: var(--color-text);
+    margin: 1lh;
+    font-family: inter;
+}
+
+time {
+    display: block;
+    width: 2ch;
+    margin-inline: auto;
+    text-align: center;
+    overflow-wrap: anywhere;
+    line-height: 0.9;
+    color: var(--color-primary);
+    background-color: transparent;
+    margin-top: var(--spacing-xs);
+}
+
+article {
+    margin: var(--spacing-s);
+    max-width: 75ch;
+}
+
+blockquote {
+    margin: var(--spacing-m);
+    font-size: var(--heading-quote);
+    color: var(--color-text);
+    font-family: larken;
+    font-style: italic;
+}
+
+img {
+    object-fit: cover;
+    max-inline-size: 100%;
+    block-size: auto;
+    padding: var(--spacing-m);
+    width: 100%;
+}
+
+
+.timeline__item {
+    display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    list-style: none;
+    color: var(--color-text);
+}
+
+.timeline {
+    margin: var(--spacing-l);
+    list-style: none;
+}
+
+.timeline__line {
+    background-color: var(--color-text);
+}
+
+
+@media (prefers-color-scheme: light) {
+
+    h2,
+    h3,
+    p,
+    blockquote {
+        color: var(--color-primary);
+    }
+
+    time {
+        color: var(--color-text);
+    }
+
+
+    .timeline__item {
+        color: var(--color-primary);
+    }
+
+    .timeline__line {
+        background-color: var(--color-primary);
+    }
+}
