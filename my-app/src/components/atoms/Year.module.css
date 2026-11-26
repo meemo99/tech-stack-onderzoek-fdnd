@@ -1,0 +1,23 @@
+.yearHeading {
+    font-size: var(--heading-year);
+    background-color: transparent;
+}
+
+.yearTime {
+    display: block;
+    width: 2ch;
+    margin-inline: auto;
+    text-align: center;
+    overflow-wrap: anywhere;
+    line-height: 0.9;
+    color: var(--color-primary);
+    background-color: var(--color-text);
+    margin-top: var(--spacing-xs);
+}
+
+@media (prefers-color-scheme: light) {
+    .yearTime {
+        color: var(--color-text);
+        background-color: var(--color-primary);
+    }
+}
