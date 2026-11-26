@@ -1,0 +1,14 @@
+{% macro eraCard(era) %}
+{% set imgBase = "https://fdnd-agency.directus.app/assets/" + era.cover + "?width=500&height=400" %}
+<article class="era-card">
+    <h2>{{ era.title }}</h2>
+    <p>{{ era.summary }}</p>
+    <p>{{ era.content_blocks[0].text }}</p>
+    <blockquote>{{ era.content_blocks[1].text }}</blockquote>
+    <picture>
+        <source srcset="{{ imgBase }}&format=avif" type="image/avif">
+        <source srcset="{{ imgBase }}&format=webp" type="image/webp">
+        <img src="{{ imgBase }}" width="500" height="400" alt="">
+    </picture>
+</article>
+{% endmacro %}
